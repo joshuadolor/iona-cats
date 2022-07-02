@@ -1,0 +1,1 @@
+export const CATS_API_ENDPOINT_V1 = "https://api.thecatapi.com/v1"
