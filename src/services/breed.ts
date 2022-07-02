@@ -13,7 +13,7 @@ export class BreedService {
                 return data.map(d => new Breed(d));
             })
             .catch((e:AxiosError) => {
-                return e;
+                throw e;
             });
      
     }

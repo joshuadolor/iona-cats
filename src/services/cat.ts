@@ -21,7 +21,7 @@ export class CatService {
                 return data.map(d => new Model(d));
             })
             .catch((e:unknown) => {
-                // return new ExceptionHandler("UserService:get", e);
+                throw e;
             });
      
     }
@@ -34,7 +34,6 @@ export class CatService {
             })
             .catch((e:AxiosError) => {
                 throw e;
-                // return new ExceptionHandler("UserService:get", e);
             });
     }
 }
