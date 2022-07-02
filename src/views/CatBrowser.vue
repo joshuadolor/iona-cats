@@ -41,17 +41,10 @@
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
 import CatList from "@/components/cat/List.vue";
-import { BreedService } from "../services/breed";
-
-import { CatService } from "../services/cat";
+import { BreedService } from "@/services/breed";
+import { CatService, FetchParameters } from "@/services/cat";
 import { IBreed } from "@/models/breed";
 import { ICat } from "@/models/cat";
-
-type FetchParameters = {
-    page: number;
-    limit: number;
-    breed_id: string;
-};
 
 @Options({
     components: {
